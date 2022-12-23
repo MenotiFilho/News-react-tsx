@@ -7,13 +7,15 @@ import New from "./components/New/New";
 
 function App() {
   return (
-    <div className="">
+    <div className=" flex flex-col items-center max-w-7xl mx-auto">
       <Header></Header>
-      <div className="flex  container mx-auto w-1440px">
+      <div className="flex gap-7 ">
         <Hero></Hero>
         <New />
       </div>
-      <Articles></Articles>
+      <div className="flex jus">
+        <Articles></Articles>
+      </div>
     </div>
   );
 }
